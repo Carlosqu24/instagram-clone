@@ -38,6 +38,8 @@ const PostsList = () => {
                 flex-col 
                 items-center 
                 justify-center 
+                lg:m-0
+                lg:ml-auto
                 m-auto
             '
         >
