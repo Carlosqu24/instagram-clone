@@ -5,23 +5,23 @@ import PostsList from 'modules/Posts/PostsList/PostsList'
 const suggestedUsersList = [{
   id: 1,
   username: "legion_cre",
-  profileImageURL: "../../../public/profile-image.jpg"
+  profileImageURL: "https://t4.ftcdn.net/jpg/03/64/21/11/360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg"
 }, {
   id: 2,
   username: "_biae_pz",
-  profileImageURL: "../../../public/profile-image.jpg"
+  profileImageURL: "https://www.reuters.com/resizer/nKNuP7CUMD-waJzzPrITsw0CMcY=/1920x0/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/UJULRTTCDFNBTEJAC4Y3SXIKW4.jpg"
 }, {
   id: 3,
   username: "michitoscr",
-  profileImageURL: "../../../public/profile-image.jpg"
+  profileImageURL: "https://carwow-uk-wp-3.imgix.net/18015-MC20BluInfinito-scaled-e1666008987698.jpg"
 }, {
   id: 4,
   username: "geraldgd_d",
-  profileImageURL: "../../../public/profile-image.jpg"
+  profileImageURL: "https://stimg.cardekho.com/images/carexteriorimages/630x420/Skoda/Kushaq/9771/1697178106968/front-left-side-47.jpg?impolicy=resize&imwidth=480"
 }, {
   id: 5,
   username: "amigos_viajeros_tours",
-  profileImageURL: "../../../public/profile-image.jpg"
+  profileImageURL: "https://cdn.jdpower.com/Average%20Weight%20Of%20A%20Car.jpg"
 }]
 
 function App() {
@@ -45,17 +45,17 @@ function App() {
 
 
               <div className='ml-2'>
-                <h2 className='text-[15px] font-bold'>Username</h2>
+                <h2 className='text-[15px] font-bold'>Carlosqu24</h2>
                 <p className='text-[15px] text-gray-500'>Carlos H Quesada</p>
               </div>
             </div>
-            <span className='text-[15px] mt-auto'>Switch</span>
+            <span className='text-[14px] mt-auto font-bold text-[#1b74e4]'>Switch</span>
           </div>
 
           <div id='suggested-for-you'>
             <div className='flex justify-between mt-[24px] text-[14px]'>
               <span className='font-bold text-gray-500'>Suggested for you</span>
-              <span>See all</span>
+              <span className='font-bold'>See all</span>
             </div>
 
             {
@@ -64,7 +64,7 @@ function App() {
                   <div className="flex h-[44px] justify-between w-full my-[8px]">
                     <div className="flex justify-between">
                       <img
-                        className='w-8 h-8 rounded-full'
+                        className='w-8 h-8 rounded-full object-cover'
                         src={user.profileImageURL}
                         alt=""
                       />
@@ -75,7 +75,7 @@ function App() {
                         <p className='text-[12px] text-gray-500'>Suggested for you</p>
                       </div>
                     </div>
-                    <span className='text-[15px] mt-auto'>Follow</span>
+                    <span className='text-[14px] text-[#1b74e4] mt-auto font-bold'>Follow</span>
                   </div>
                 )
               )
