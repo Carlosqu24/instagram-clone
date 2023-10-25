@@ -1,6 +1,8 @@
 import React from 'react'
+import PostCard from '../PostCard/PostCard'
+import { Post } from 'models/post'
 
-const postsList = [{
+const postsList: Post[] = [{
     id: 1,
     imageURL: "https://img.remediosdigitales.com/550d6a/maserati-ghibli-hybrid-2021-prueba_2728/840_560.jpeg",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto consectetur labore omnis ratione blanditiis nam quis voluptas aliquam quo eos!",
@@ -27,114 +29,25 @@ const postsList = [{
 const PostsList = () => {
     return (
         <ul
-            className='w-[630px] flex flex-col items-center justify-center m-auto'
+            className='
+                w-[100%] 
+                sm:w-[630px] 
+                md:w-[630px] 
+                xl:w-[630px] 
+                flex 
+                flex-col 
+                items-center 
+                justify-center 
+                m-auto
+            '
         >
-
             {
                 postsList.map(post => (
-                    <div className="card mb-9" style={{ width: "470px" }}>
-                        <div className='card-header flex justify-between' style={{ marginBottom: "12px" }}>
-                            <div className='flex justify-between items-center'>
-                                <img className='rounded-full' src={post.profileImageUrl} style={{ width: "45px", height: "45px" }} alt="" />
-                                <span className='ml-3 font-bold'>{post.username}</span>
-                                <span className='ml-2'>5h</span>
-                            </div>
-                            <div>...</div>
-                        </div>
-                        <img
-                            src={post.imageURL}
-                            className="card-img-top"
-                            style={{ width: "470px", height: "470px", objectFit: "cover" }}
-                            alt="..."
-                        />
-                        <div className="card-body">
-                            <div className='flex justify-between items-center pt-2 pb-1'>
-                                <div className='flex justify-between items-center'>
-                                    <span style={{ fontSize: "26px" }} className="material-symbols-outlined">
-                                        favorite
-                                    </span>
-                                    <span style={{ fontSize: "26px" }} className="material-symbols-outlined ml-1">
-                                        chat_bubble
-                                    </span>
-                                    <span style={{ fontSize: "26px" }} className="material-symbols-outlined ml-1">
-                                        send
-                                    </span>
-                                </div>
-
-                                <span style={{ fontSize: "26px" }} className="material-symbols-outlined ml-1">
-                                    bookmarks
-                                </span>
-                            </div>
-                            <div>
-                                <p className='font-bold'>18 likes</p>
-                                <span className='font-bold'>{post.username}</span>
-                                <span className='ml-1'>{
-                                    post.description.length > 75
-                                        ? `${post.description.slice(0, 75)}...`
-                                        : post.description
-                                }</span>
-                                <p className='font-bold'>See translation</p>
-                            </div>
-
-
-                            <div className='flex justify-between items-center'>
-                                <input
-                                    type="text"
-                                    placeholder='Add a description...'
-                                    className='outline-none'
-                                />
-                                <span style={{ fontSize: "18px" }} className="material-symbols-outlined">
-                                    mood
-                                </span>
-                            </div>
-                        </div>
-                    </div>
+                    <PostCard 
+                        post={post}
+                    />
                 ))
             }
-
-            {/* <li>
-          <div className="card" style={{height: "725px"}}>
-            <img 
-              src="https://img.remediosdigitales.com/550d6a/maserati-ghibli-hybrid-2021-prueba_2728/840_560.jpeg"
-              className="card-img-top" 
-              style={{ width: "470px", height: "470px", objectFit: "cover"}}
-              alt="..." 
-            />
-            <div className="card-body">
-              <h5 className="card-title">Card title</h5>
-              <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" className="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </li>
-        <li>
-            <div className="card">
-            <img 
-              src="https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg" 
-              className="card-img-top" 
-              alt="..." 
-            />
-            <div className="card-body">
-              <h5 className="card-title">Card title</h5>
-              <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" className="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </li>
-        <li>
-            <div className="card">
-            <img 
-              src="https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg" 
-              className="card-img-top" 
-              alt="..." 
-            />
-            <div className="card-body">
-              <h5 className="card-title">Card title</h5>
-              <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" className="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </li> */}
         </ul>
     )
 }
