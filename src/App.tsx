@@ -46,7 +46,7 @@ function App() {
 
               <div className='ml-2'>
                 <h2 className='text-[15px] font-bold'>Username</h2>
-                <p className='text-[15px]'>Carlos H Quesada</p>
+                <p className='text-[15px] text-gray-500'>Carlos H Quesada</p>
               </div>
             </div>
             <span className='text-[15px] mt-auto'>Switch</span>
@@ -54,7 +54,7 @@ function App() {
 
           <div id='suggested-for-you'>
             <div className='flex justify-between mt-[24px] text-[14px]'>
-              <span>Suggested for you</span>
+              <span className='font-bold text-gray-500'>Suggested for you</span>
               <span>See all</span>
             </div>
 
@@ -72,7 +72,7 @@ function App() {
 
                       <div className='ml-2'>
                         <h2 className='text-[15px] font-bold'>{user.username}</h2>
-                        <p className='text-[12px]'>Suggested for you</p>
+                        <p className='text-[12px] text-gray-500'>Suggested for you</p>
                       </div>
                     </div>
                     <span className='text-[15px] mt-auto'>Follow</span>
@@ -80,6 +80,32 @@ function App() {
                 )
               )
             }
+          </div>
+
+          <div>
+            <div className='mb-[16px] text-gray-500'>
+              <span className='text-[13px]'>About</span>
+              <span className='text-[13px] ml-[2px]'>-</span>
+              <span className='text-[13px] ml-[2px]'>Help</span>
+              <span className='text-[13px] ml-[2px]'>-</span>
+              <span className='text-[13px] ml-[2px]'>Press</span>
+              <span className='text-[13px] ml-[2px]'>-</span>
+              <span className='text-[13px] ml-[2px]'>Api</span>
+              <span className='text-[13px] ml-[2px]'>-</span>
+              <span className='text-[13px] ml-[2px]'>Jobs</span>
+              <span className='text-[13px] ml-[2px]'>-</span>
+              <span className='text-[13px] ml-[2px]'>Privacy</span>
+              <span className='text-[13px] ml-[2px]'>-</span>
+              <span className='text-[13px] ml-[2px]'>Terms</span>
+              <span className='text-[13px] ml-[2px]'>-</span>
+              <span className='text-[13px] ml-[2px]'>Locations</span>
+              <span className='text-[13px] ml-[2px]'>-</span>
+              <span className='text-[13px] ml-[2px]'>Language</span>
+              <span className='text-[13px] ml-[2px]'>-</span>
+              <span className='text-[13px] ml-[2px]'>Meta Verified</span>
+            </div>
+
+            <span className='text-[13px] text-gray-500'>©2023 INSTAGRAM FROM META</span>
           </div>
         </aside>
       </main>
