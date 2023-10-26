@@ -1,4 +1,6 @@
 import React from 'react'
+import UserInformation from '../components/UserInformation/UserInformation'
+import UserPostsGrid from '../components/UserPostsGrid/UserPostsGrid'
 
 interface User {
   id: string
@@ -14,35 +16,11 @@ interface UserProfileProps {
 const UserProfile = ({ user }: UserProfileProps) => {
   return (
     <div
-    // className="my-[60px] mx-[20px]" ProfilePage
+      className="flex flex-col"
+      // className="my-[60px] mx-[20px]" ProfilePage
     >
-      <div className="flex">
-        <img
-          src="../../../public/profile-image.jpg"
-          alt=""
-          className="mr-[50px] rounded-full"
-        />
-
-        <div>
-          <div className="mb-[20px]">
-            <span className="mr-[20px] text-[18px]">{user.userName}</span>
-            <button className="mr-[8px] px-[16px] py-[3px] bg-gray-300 rounded-[8px]">
-              Edit profile
-            </button>
-            <button className="mr-[12px] px-[16px] py-[3px] bg-gray-300 rounded-[8px]">
-              View archive
-            </button>
-            <button>Settings</button>
-          </div>
-          <div className="mb-[20px]">
-            <span className="mr-[40px] text-[16px]">66 posts</span>
-            <span className="mr-[40px] text-[16px]">233 followers</span>
-            <span>564 following</span>
-          </div>
-          <p className="mb-[6px]">{user.displayName}</p>
-          <p>{user.biography}</p>
-        </div>
-      </div>
+      <UserInformation user={user} />
+      <UserPostsGrid />
     </div>
   )
 }
