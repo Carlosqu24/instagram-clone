@@ -47,12 +47,23 @@ const userPostsList = [
 
 const UserPostsGrid = () => {
   return (
-    <div className="grid grid-cols-3 gap-1 md:gap-7">
+    <div className="grid grid-cols-3 gap-1">
       {userPostsList.map((post) => (
         <div className="relative h-[215px] ">
-          <div className="invisible h-0 w-0 flex items-center justify-center z-20 hover:w-full hover:h-full hover:absolute hover:bg-[#343434ad]">
-            <span className="z-30">{post.totalLikes}</span>
-            <span className="ml-5 z-30">{post.totalComments}</span>
+          <div className="bg-[#00000] text-[transparent] absolute w-full h-full flex items-center justify-center z-20 hover:w-full hover:h-full hover:bg-[#343434ad] hover:text-[#fff]">
+            <div className="flex items-center">
+              <span className="material-icons text-[18px]">favorite</span>
+              <span className="z-30 text-[14px] ml-2 font-bold">
+                {post.totalLikes}
+              </span>
+            </div>
+
+            <div className="ml-5 flex items-center">
+              <span className="material-icons text-[18px]">chat_bubble</span>
+              <span className="z-30 text-[14px] ml-2 font-bold">
+                {post.totalComments}
+              </span>
+            </div>
           </div>
           <img
             src={post.imageURL}
