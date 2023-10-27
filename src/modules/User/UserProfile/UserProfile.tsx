@@ -21,16 +21,19 @@ const UserProfile = ({ user }: UserProfileProps) => {
     >
       <UserInformation user={user} />
 
-      <div className="mb-4 border-b border-gray-200 dark:border-gray-700">
+      <div className="mb-4 border-t py-6 border-gray-200 dark:border-gray-700 flex justify-center">
         <ul
-          className="flex flex-wrap items-center -mb-px text-sm font-medium text-center"
+          className="flex flex-wrap -mb-px text-sm font-medium text-center"
           id="default-tab"
           data-tabs-toggle="#default-tab-content"
           role="tablist"
         >
-          <li className="mr-2" role="presentation">
+          <li className="mr-[60px]" role="presentation ">
+            <span className="material-symbols-outlined text-[16px]">
+              grid_on
+            </span>
             <button
-              className="inline-block p-4 border-b-2 rounded-t-lg"
+              className="inline-block rounded-t-lg ml-1"
               id="posts-tab"
               data-tabs-target="#posts"
               type="button"
@@ -41,9 +44,12 @@ const UserProfile = ({ user }: UserProfileProps) => {
               Posts
             </button>
           </li>
-          <li className="mr-2" role="presentation">
+          <li className="mr-[60px]" role="presentation">
+            <span className="material-symbols-outlined text-[16px]">
+              bookmark
+            </span>
             <button
-              className="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+              className="inline-block rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 ml-1"
               id="saved-tab"
               data-tabs-target="#saved"
               type="button"
@@ -55,8 +61,11 @@ const UserProfile = ({ user }: UserProfileProps) => {
             </button>
           </li>
           <li className="mr-2" role="presentation">
+            <span className="material-symbols-outlined text-[16px]">
+              person_pin
+            </span>
             <button
-              className="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+              className="inline-block rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 ml-1"
               id="tagged-tab"
               data-tabs-target="#tagged"
               type="button"
