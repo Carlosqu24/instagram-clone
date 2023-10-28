@@ -1,6 +1,7 @@
 import RightSidebar from 'components/RightSidebar/RightSidebar'
 import PostsList from 'modules/Posts/PostsList/PostsList'
 import UserProfile from 'modules/User/UserProfile/UserProfile'
+import UserProfilePage from 'modules/User/pages/UserProfilePage/UserProfilePage'
 import { createBrowserRouter } from 'react-router-dom'
 
 interface Route {
@@ -20,16 +21,7 @@ const routes: Route[] = [
   },
   {
     path: '/profile',
-    element: (
-      <UserProfile
-        user={{
-          id: crypto.randomUUID(),
-          userName: 'carlos_qu24',
-          displayName: 'Carlos H. Quesada',
-          biography: 'Web developer | Web designer P.Z. 🌊🌴'
-        }}
-      />
-    )
+    element: <UserProfilePage />
   }
 ]
 
