@@ -1,17 +1,9 @@
-import UserProfile from 'modules/User/UserProfile/UserProfile'
 import React from 'react'
+import UserProfile from 'modules/User/UserProfile/UserProfile'
+import { mockUser } from 'data/user'
 
 const UserProfilePage = () => {
-  return (
-    <UserProfile
-      user={{
-        id: crypto.randomUUID(),
-        userName: 'carlos_qu24',
-        displayName: 'Carlos H. Quesada',
-        biography: 'Web developer | Web designer P.Z. 🌊🌴'
-      }}
-    />
-  )
+  return <UserProfile user={mockUser} />
 }
 
 export default UserProfilePage
