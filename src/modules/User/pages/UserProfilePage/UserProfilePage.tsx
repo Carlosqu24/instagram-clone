@@ -1,9 +1,8 @@
 import React from 'react'
-import UserProfile from 'modules/User/UserProfile/UserProfile'
-import { mockUser } from 'data/user'
+import UserProfileContainer from 'modules/User/containers/UserProfileContainer'
 
 const UserProfilePage = () => {
-  return <UserProfile user={mockUser} />
+  return <UserProfileContainer />
 }
 
 export default UserProfilePage
