@@ -33,7 +33,7 @@ const PostCard = ({ post }: PostCardProps) => {
                 "
         alt="..."
       />
-      <div className="card-body pl-[16px] pr-[16px]">
+      <div className="card-body pl-[16px] pr-[16px] sm:pl-[0px] sm:pr-[0px] md:pl-[0px] md:pr-[0px] lg:pl-[0px] lg:pr-[0px] xl:pl-[0px] xl:pr-[0px]">
         <div className="flex justify-between items-center pt-3 pb-2">
           <div className="flex justify-between items-center">
             <span className="material-symbols-outlined text-[26px]">
