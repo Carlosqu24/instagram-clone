@@ -33,7 +33,7 @@ const PostCard = ({ post }: PostCardProps) => {
                 "
         alt="..."
       />
-      <div className="card-body">
+      <div className="card-body pl-[16px] pr-[16px]">
         <div className="flex justify-between items-center pt-3 pb-2">
           <div className="flex justify-between items-center">
             <span className="material-symbols-outlined text-[26px]">
@@ -66,9 +66,9 @@ const PostCard = ({ post }: PostCardProps) => {
           <input
             type="text"
             placeholder="Add a description..."
-            className="outline-none"
+            className="hidden sm:block md:block lg:block xl:block outline-none p-0 border-none"
           />
-          <span className="material-symbols-outlined text-[18px]">mood</span>
+          <span className="hidden sm:block md:block lg:block xl:block material-symbols-outlined text-[18px]">mood</span>
         </div>
       </div>
     </article>
