@@ -1,30 +1,46 @@
 import React from 'react'
 
+const sidebarClassNames = {
+  aside: `fixed 
+  top-0 
+  left-0 
+  z-40 
+  h-screen 
+  transition-transform 
+  -translate-x-full 
+  sm:w-18 
+  md:w-18
+  xl:w-56
+  sm:translate-x-0
+
+  border-solid 
+  border-r-[1px]
+  border-[#d7d7d9]
+  dark:border-[#262626]
+  divide-x`,
+  navbarContainer: `h-full px-3 py-4 overflow-y-auto bg-[#fff] dark:bg-[#000] text-center`,
+  navbarList: `space-y-2 font-medium`,
+  navbarItem: ``,
+  navbarItemTextSpan: `flex-1 ml-3 whitespace-nowrap hidden xl:flex 2xl:flex`,
+  navbarLink: `flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group`,
+  navbarLinkLogo: `flex items-center p-2 py-6 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group`,
+  navbarLogo: ``,
+  navbarProfileImage: "w-6 rounded-full"
+}
+
 const Sidebar = () => {
   return (
     <aside
       id="default-sidebar"
-      className="
-          fixed 
-          top-0 
-          left-0 
-          z-40 
-          h-screen 
-          transition-transform 
-          -translate-x-full 
-          sm:w-18 
-          md:w-18
-          xl:w-56
-          sm:translate-x-0
-        "
+      className={sidebarClassNames.aside}
       aria-label="Sidebar"
     >
-      <div className="h-full px-3 py-4 overflow-y-auto bg-[#000] dark:bg-[#000] text-center">
-        <ul className="space-y-2 font-medium">
+      <div className={sidebarClassNames.navbarContainer}>
+        <ul className={sidebarClassNames.navbarList}>
           <li>
             <a
               href="#"
-              className="flex items-center p-2 py-6 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+              className={sidebarClassNames.navbarLinkLogo}
             >
               <img
                 className={window.innerWidth >= 1280 ? 'w-28' : 'w-6'}
@@ -40,10 +56,10 @@ const Sidebar = () => {
           <li>
             <a
               href="/"
-              className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+              className={sidebarClassNames.navbarLink}
             >
               <span className="material-icons">home</span>
-              <span className="flex-1 ml-3 whitespace-nowrap hidden xl:flex 2xl:flex">
+              <span className={sidebarClassNames.navbarItemTextSpan}>
                 Inicio
               </span>
             </a>
@@ -51,15 +67,15 @@ const Sidebar = () => {
           <li>
             <a
               href="/profile"
-              className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+              className={sidebarClassNames.navbarLink}
             >
               <img
-                className="w-6 rounded-full"
+                className={sidebarClassNames.navbarProfileImage}
                 src="../../../public/profile-image.jpg"
                 alt=""
               />
 
-              <span className="flex-1 ml-3 whitespace-nowrap hidden xl:flex 2xl:flex">
+              <span className={sidebarClassNames.navbarItemTextSpan}>
                 Perfil
               </span>
             </a>
