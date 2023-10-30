@@ -25,7 +25,7 @@ const sidebarClassNames = {
   navbarLink: `flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group`,
   navbarLinkLogo: `flex items-center p-2 py-6 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group`,
   navbarLogo: ``,
-  navbarProfileImage: "w-6 rounded-full"
+  navbarProfileImage: "w-[24px] rounded-full"
 }
 
 const Sidebar = () => {
@@ -58,7 +58,7 @@ const Sidebar = () => {
               href="/"
               className={sidebarClassNames.navbarLink}
             >
-              <span className="material-icons">home</span>
+              <span className="material-icons w-[24px] h-[24px]">home</span>
               <span className={sidebarClassNames.navbarItemTextSpan}>
                 Inicio
               </span>
