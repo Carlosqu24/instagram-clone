@@ -8,7 +8,7 @@ interface PostCardProps {
 const PostCard = ({ post }: PostCardProps) => {
   return (
     <article className="card mb-9 w-[100%] sm:w-[470px] md:w-[470px] xl:w-[470px]">
-      <div className="card-header flex justify-between mb-[12px]">
+      <div className="card-header flex justify-between mb-[12px] px-[16px] pt-[12px] sm:px-[0px] sm:pt-[0px] md:px-[0px] md:pt-[0px] lg:px-[0px] lg:pt-[0px] xl:px-[0px] xl:pt-[0px]">
         <div className="flex justify-between items-center">
           <img
             className="rounded-full w-[45px] h-[45px]"
