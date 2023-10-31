@@ -1,0 +1,12 @@
+git log --pretty=format:"%cn - %ar - %s"
+Le da formato a cada commit
+
+git log development..release-v1.0 --pretty=format:"%cn - %ar - %s"
+Muestra los commits diferentes de release-v1.0 con respecto a development
+
+
+git log release-v1.0..development --pretty=format:"%cn - %ar - %s"
+Muestra los commits diferentes que tiene la rama development con respecto a release-v1.0
+
+git log release-v1.0...development --pretty=format:"%cn - %ar - %s"
+Mustra los commits que tiene release-v1.0 diferentes con respecto a development
