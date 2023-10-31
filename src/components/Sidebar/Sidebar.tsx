@@ -11,7 +11,7 @@ const sidebarClassNames = {
   sm:w-18 
   md:w-18
   xl:w-56
-  sm:translate-x-0
+  md:translate-x-0
 
   border-solid 
   border-r-[1px]
