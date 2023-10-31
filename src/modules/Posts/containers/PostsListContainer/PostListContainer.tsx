@@ -1,9 +1,9 @@
 import React from 'react'
-import PostListPresentation from 'modules/Posts/presentations/PostListPresentation/PostListPresentation'
+import PostsPresentation from 'modules/Posts/presentations/PostListPresentation/PostListPresentation'
 import { mockPostsList } from 'data/posts'
 
-const PostListContainer = () => {
-  return <PostListPresentation postsList={mockPostsList} />
+const PostsContainer = () => {
+  return <PostsPresentation postsList={mockPostsList} />
 }
 
-export default PostListContainer
+export default PostsContainer
