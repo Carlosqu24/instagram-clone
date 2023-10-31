@@ -14,13 +14,13 @@ const postCardClassNames = {
   cardHeaderUserInformationTimeAgo: `ml-2`,
 
   cardPosterImage: `card-img-top 
-  w-[100%]
+  
   sm:w-[470px]
   md:w-[470px]
   xl:w-[470px] 
   h-[470px] 
   object-cover`,
-  
+
   cardBody: `card-body pl-[16px] pr-[16px] sm:pl-[0px] sm:pr-[0px] md:pl-[0px] md:pr-[0px] lg:pl-[0px] lg:pr-[0px] xl:pl-[0px] xl:pr-[0px]`,
   cardBodyActions: `flex justify-between items-center pt-3 pb-2`,
   cardBodyActionsLeft: `flex justify-between items-center`,
@@ -46,8 +46,14 @@ const PostCard = ({ post }: PostCardProps) => {
             src={post.profileImageUrl}
             alt=""
           />
-          <span className={postCardClassNames.cardHeaderUserInformationUsername}>{post.username}</span>
-          <span className={postCardClassNames.cardHeaderUserInformationTimeAgo}>5h</span>
+          <span
+            className={postCardClassNames.cardHeaderUserInformationUsername}
+          >
+            {post.username}
+          </span>
+          <span className={postCardClassNames.cardHeaderUserInformationTimeAgo}>
+            5h
+          </span>
         </div>
         <div>...</div>
       </div>
@@ -75,14 +81,20 @@ const PostCard = ({ post }: PostCardProps) => {
           </span>
         </div>
         <div>
-          <p className={postCardClassNames.cardBodyTotalLikes}>{post.totalLikes} likes</p>
-          <span className={postCardClassNames.cardBodyUsername}>{post.username}</span>
+          <p className={postCardClassNames.cardBodyTotalLikes}>
+            {post.totalLikes} likes
+          </p>
+          <span className={postCardClassNames.cardBodyUsername}>
+            {post.username}
+          </span>
           <span className={postCardClassNames.cardBodyDescription}>
             {post.description.length > 75
               ? `${post.description.slice(0, 75)}...`
               : post.description}
           </span>
-          <p className={postCardClassNames.cardBodySeeTranslation}>See translation</p>
+          <p className={postCardClassNames.cardBodySeeTranslation}>
+            See translation
+          </p>
         </div>
 
         <div className={postCardClassNames.cardFooter}>
