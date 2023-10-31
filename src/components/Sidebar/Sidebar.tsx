@@ -8,9 +8,9 @@ const sidebarClassNames = {
   h-screen 
   transition-transform 
   -translate-x-full 
-  sm:w-18 
-  md:w-18
-  xl:w-56
+   
+  md:w-[72.8px]
+  xl:w-[248.4px]
   md:translate-x-0
 
   border-solid 
@@ -25,7 +25,7 @@ const sidebarClassNames = {
   navbarLink: `flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group`,
   navbarLinkLogo: `flex items-center p-2 py-6 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group`,
   navbarLogo: ``,
-  navbarProfileImage: "w-[24px] rounded-full"
+  navbarProfileImage: 'w-[24px] rounded-full'
 }
 
 const Sidebar = () => {
@@ -38,10 +38,7 @@ const Sidebar = () => {
       <div className={sidebarClassNames.navbarContainer}>
         <ul className={sidebarClassNames.navbarList}>
           <li>
-            <a
-              href="#"
-              className={sidebarClassNames.navbarLinkLogo}
-            >
+            <a href="#" className={sidebarClassNames.navbarLinkLogo}>
               <img
                 className={window.innerWidth >= 1280 ? 'w-28' : 'w-6'}
                 src={
@@ -54,10 +51,7 @@ const Sidebar = () => {
             </a>
           </li>
           <li>
-            <a
-              href="/"
-              className={sidebarClassNames.navbarLink}
-            >
+            <a href="/" className={sidebarClassNames.navbarLink}>
               <span className="material-icons w-[24px] h-[24px]">home</span>
               <span className={sidebarClassNames.navbarItemTextSpan}>
                 Inicio
@@ -65,10 +59,7 @@ const Sidebar = () => {
             </a>
           </li>
           <li>
-            <a
-              href="/profile"
-              className={sidebarClassNames.navbarLink}
-            >
+            <a href="/profile" className={sidebarClassNames.navbarLink}>
               <img
                 className={sidebarClassNames.navbarProfileImage}
                 src="../../../public/profile-image.jpg"
