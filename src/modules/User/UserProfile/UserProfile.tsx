@@ -21,7 +21,7 @@ const UserProfile = ({ user }: UserProfileProps) => {
     >
       <UserInformation user={user} />
 
-      <div className="mb-4 border-t py-6 border-gray-200 dark:border-gray-700 flex justify-center">
+      <div className="mb-4 border-t py-6 border-gray-200 dark:border-gray-700 flex justify-center w-[100%]">
         <ul
           className="flex flex-wrap -mb-px text-sm font-medium text-center"
           id="default-tab"
