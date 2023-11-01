@@ -1,11 +1,5 @@
+import { User } from 'models/user'
 import React from 'react'
-
-interface User {
-  id: string
-  userName: string
-  displayName: string
-  biography: string
-}
 
 interface UserProfileProps {
   user: User
@@ -14,7 +8,11 @@ interface UserProfileProps {
 const userInformationClassNames = {
   userInformationContainer: '',
   profileImage:
-    'md:ml-[47.656px] md:mr-[77.656px] mr-[28px] rounded-full object-cover 77 w-[77px] h-[77px] md:w-[150px] md:h-[150px]'
+    'md:ml-[47.656px] md:mr-[77.656px] mr-[28px] rounded-full object-cover 77 w-[77px] h-[77px] md:w-[150px] md:h-[150px]',
+  userInformationHeader: 'mb-[20px] flex flex-wrap items-center',
+  userInformationStatisticsGroup: 'mb-[20px]',
+  userInformationStatisticItem: 'text-[16px] hidden md:inline',
+  userInformationDisplayName: 'mb-[6px]'
 }
 
 const UserInformation = ({ user }: UserProfileProps) => {

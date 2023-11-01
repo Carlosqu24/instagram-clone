@@ -1,19 +1,14 @@
 import React from 'react'
 import UserInformation from '../components/UserInformation/UserInformation'
 import UserPostsGrid from '../components/UserPostsGrid/UserPostsGrid'
-
-interface User {
-  id: string
-  userName: string
-  displayName: string
-  biography: string
-}
+import { User } from 'models/user'
 
 interface UserProfileProps {
   user: User
+  userPostsList: any[]
 }
 
-const UserProfile = ({ user }: UserProfileProps) => {
+const UserProfile = ({ user, userPostsList }: UserProfileProps) => {
   return (
     <div
       className="flex flex-col w-full lg:w-[935px] m-auto"
@@ -85,7 +80,7 @@ const UserProfile = ({ user }: UserProfileProps) => {
           role="tabpanel"
           aria-labelledby="posts-tab"
         >
-          <UserPostsGrid />
+          <UserPostsGrid userPostsList={userPostsList} />
         </div>
         <div
           className="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800"
@@ -93,15 +88,9 @@ const UserProfile = ({ user }: UserProfileProps) => {
           role="tabpanel"
           aria-labelledby="saved-tab"
         >
-          <p className="text-sm text-gray-500 dark:text-gray-400">
-            This is some placeholder content the{' '}
-            <strong className="font-medium text-gray-800 dark:text-white">
-              Dashboard tab's associated content
-            </strong>
-            . Clicking another tab will toggle the visibility of this one for
-            the next. The tab JavaScript swaps classes to control the content
-            visibility and styling.
-          </p>
+          <div className="flex items-center justify-center h-[279px] font-bold text-[30px]">
+            <h2>No Photos</h2>
+          </div>
         </div>
         <div
           className="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800"

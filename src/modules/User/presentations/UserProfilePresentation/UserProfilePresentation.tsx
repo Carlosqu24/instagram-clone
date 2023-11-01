@@ -1,9 +1,18 @@
 import React from 'react'
 import UserProfile from 'modules/User/UserProfile/UserProfile'
-import { mockUser } from 'data/user'
+import { Post } from 'models/post'
+import { User } from 'models/user'
 
-const UserProfilePresentation = () => {
-  return <UserProfile user={mockUser} />
+interface UserProfilePresentationProps {
+  user: User
+  userPostsList: Post[]
+}
+
+const UserProfilePresentation = ({
+  user,
+  userPostsList
+}: UserProfilePresentationProps) => {
+  return <UserProfile user={user} userPostsList={userPostsList} />
 }
 
 export default UserProfilePresentation
