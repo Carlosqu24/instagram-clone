@@ -29,7 +29,7 @@ const appClassNames = {
     xl:ml-[248.4px] 
     flex 
     flex-row
-    lg:justify-end
+    lg:justify-center
     justify-center
 
     bg-[#fff] 
