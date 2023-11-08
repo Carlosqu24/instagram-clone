@@ -13,6 +13,19 @@ export default {
             switch: "Switch",
             seeAll: "See All",
             follow: "Follow"
+        },
+
+        footer: {
+            about: "About",
+            help: "Help",
+            press: "Press",
+            api: "Api",
+            jobs: "Jobs",
+            privacy: "Privacy",
+            terms: "Terms",
+            locations: "Locations",
+            language: "Language",
+            metaVerified: "Meta Verified"
         }
     }
 }

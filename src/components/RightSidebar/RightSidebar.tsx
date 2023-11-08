@@ -58,25 +58,43 @@ const RightSidebar = () => {
 
       <div>
         <div className="mb-[16px] text-gray-500">
-          <span className="text-[13px]">About</span>
+          <span className="text-[13px]">{translator('footer.about')}</span>
           <span className="text-[13px] ml-[2px]">-</span>
-          <span className="text-[13px] ml-[2px]">Help</span>
+          <span className="text-[13px] ml-[2px]">
+            {translator('footer.help')}
+          </span>
           <span className="text-[13px] ml-[2px]">-</span>
-          <span className="text-[13px] ml-[2px]">Press</span>
+          <span className="text-[13px] ml-[2px]">
+            {translator('footer.press')}
+          </span>
           <span className="text-[13px] ml-[2px]">-</span>
-          <span className="text-[13px] ml-[2px]">Api</span>
+          <span className="text-[13px] ml-[2px]">
+            {translator('footer.api')}
+          </span>
           <span className="text-[13px] ml-[2px]">-</span>
-          <span className="text-[13px] ml-[2px]">Jobs</span>
+          <span className="text-[13px] ml-[2px]">
+            {translator('footer.jobs')}
+          </span>
           <span className="text-[13px] ml-[2px]">-</span>
-          <span className="text-[13px] ml-[2px]">Privacy</span>
+          <span className="text-[13px] ml-[2px]">
+            {translator('footer.privacy')}
+          </span>
           <span className="text-[13px] ml-[2px]">-</span>
-          <span className="text-[13px] ml-[2px]">Terms</span>
+          <span className="text-[13px] ml-[2px]">
+            {translator('footer.terms')}
+          </span>
           <span className="text-[13px] ml-[2px]">-</span>
-          <span className="text-[13px] ml-[2px]">Locations</span>
+          <span className="text-[13px] ml-[2px]">
+            {translator('footer.locations')}
+          </span>
           <span className="text-[13px] ml-[2px]">-</span>
-          <span className="text-[13px] ml-[2px]">Language</span>
+          <span className="text-[13px] ml-[2px]">
+            {translator('footer.language')}
+          </span>
           <span className="text-[13px] ml-[2px]">-</span>
-          <span className="text-[13px] ml-[2px]">Meta Verified</span>
+          <span className="text-[13px] ml-[2px]">
+            {translator('footer.metaVerified')}
+          </span>
         </div>
 
         <span className="text-[13px] text-gray-500">
