@@ -1,7 +1,11 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
+
 import { mockSuggestedUsersList } from 'data'
 
 const RightSidebar = () => {
+  const { t: translator } = useTranslation()
+
   return (
     <aside className="hidden lg:flex lg:flex-col ml-[64px] w-[319px] h-[518px]">
       <div className="flex h-[44px] justify-between w-full">
@@ -18,14 +22,17 @@ const RightSidebar = () => {
           </div>
         </div>
         <span className="text-[14px] mt-auto font-bold text-[#1b74e4]">
-          Switch
+          {translator('rightSidebar.switch')}
         </span>
       </div>
 
       <div id="suggested-for-you">
         <div className="flex justify-between mt-[24px] text-[14px]">
-          <span className="font-bold text-gray-500">Suggested for you</span>
-          <span className="font-bold">See all</span>
+          <span className="font-bold text-gray-500">
+            {' '}
+            {translator('rightSidebar.suggestedsForYou')}
+          </span>
+          <span className="font-bold">{translator('rightSidebar.seeAll')}</span>
         </div>
         {mockSuggestedUsersList.map((user) => (
           <div className="flex h-[44px] justify-between w-full my-[8px]">
@@ -37,11 +44,13 @@ const RightSidebar = () => {
               />
               <div className="ml-2">
                 <h2 className="text-[15px] font-bold">{user.username}</h2>
-                <p className="text-[12px] text-gray-500">Suggested for you</p>
+                <p className="text-[12px] text-gray-500">
+                  {translator('rightSidebar.suggestedForYou')}
+                </p>
               </div>
             </div>
             <span className="text-[14px] text-[#1b74e4] mt-auto font-bold">
-              Follow
+              {translator('rightSidebar.follow')}
             </span>
           </div>
         ))}

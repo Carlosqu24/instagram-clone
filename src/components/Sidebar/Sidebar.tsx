@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { useTranslation } from 'react-i18next'
+
 const sidebarClassNames = {
   aside: `fixed 
   top-0 
@@ -29,6 +31,8 @@ const sidebarClassNames = {
 }
 
 const Sidebar = () => {
+  const { t: translator } = useTranslation()
+
   return (
     <aside
       id="default-sidebar"
@@ -54,7 +58,7 @@ const Sidebar = () => {
             <a href="/" className={sidebarClassNames.navbarLink}>
               <span className="material-icons w-[24px] h-[24px]">home</span>
               <span className={sidebarClassNames.navbarItemTextSpan}>
-                Inicio
+                {translator('navbar.home')}
               </span>
             </a>
           </li>
@@ -67,7 +71,7 @@ const Sidebar = () => {
               />
 
               <span className={sidebarClassNames.navbarItemTextSpan}>
-                Perfil
+                {translator('navbar.profile')}
               </span>
             </a>
           </li>
