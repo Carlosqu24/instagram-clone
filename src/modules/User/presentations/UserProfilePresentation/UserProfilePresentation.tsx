@@ -6,13 +6,22 @@ import { User } from 'models/user'
 interface UserProfilePresentationProps {
   user: User
   userPostsList: Post[]
+
+  onPostCardClick: () => void
 }
 
 const UserProfilePresentation = ({
   user,
-  userPostsList
+  userPostsList,
+  onPostCardClick
 }: UserProfilePresentationProps) => {
-  return <UserProfile user={user} userPostsList={userPostsList} />
+  return (
+    <UserProfile
+      user={user}
+      userPostsList={userPostsList}
+      onPostCardClick={onPostCardClick}
+    />
+  )
 }
 
 export default UserProfilePresentation

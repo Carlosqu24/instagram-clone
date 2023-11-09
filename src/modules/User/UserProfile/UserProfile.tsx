@@ -6,9 +6,15 @@ import { User } from 'models/user'
 interface UserProfileProps {
   user: User
   userPostsList: any[]
+
+  onPostCardClick: () => void
 }
 
-const UserProfile = ({ user, userPostsList }: UserProfileProps) => {
+const UserProfile = ({
+  user,
+  userPostsList,
+  onPostCardClick
+}: UserProfileProps) => {
   return (
     <div
       className="flex flex-col w-full lg:w-[935px] m-auto"
@@ -80,7 +86,10 @@ const UserProfile = ({ user, userPostsList }: UserProfileProps) => {
           role="tabpanel"
           aria-labelledby="posts-tab"
         >
-          <UserPostsGrid userPostsList={userPostsList} />
+          <UserPostsGrid
+            userPostsList={userPostsList}
+            onPostCardClick={onPostCardClick}
+          />
         </div>
         <div
           className="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800"
