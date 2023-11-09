@@ -26,6 +26,14 @@ export default {
             locations: "Ubicaciones",
             language: "Idioma",
             metaVerified: "Meta Verified"
+        },
+
+
+        userPost: {
+            noCommentsYet: "No comments yet.",
+            startTheConversation: "Start the conversation.",
+            seeTranslation: "Ver traducción",
+            addComment: "Agrega un comentario..."
         }
     }
 }

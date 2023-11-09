@@ -26,6 +26,13 @@ export default {
             locations: "Locations",
             language: "Language",
             metaVerified: "Meta Verified"
+        },
+
+        userPost: {
+            noCommentsYet: "No comments yet.",
+            startTheConversation: "Start the conversation.",
+            seeTranslation: "See translation",
+            addComment: "Add a comment..."
         }
     }
 }
