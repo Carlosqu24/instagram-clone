@@ -1,5 +1,7 @@
 import { Post } from "models/post";
 
+import profileImage from "../../public/profile-image.jpg"
+
 import lamborghiniPhoto from "../../public/postsList/lamborghini_aventador.jpg"
 import galaxyPhoto from "../../public/postsList/galaxy.jpg"
 import jasonStahamPhoto from "../../public/postsList/jason-statham-mens-health-1558438377.jpg"
@@ -51,56 +53,60 @@ export const mockPostsList: Post[] = [
 
 export const mockUserPostsList: Post[] = [
     {
-        id: crypto.randomUUID(),
+        id: "056b6a14-9d14-4590-88e7-29fec5e20faf",
         totalLikes: 23,
-        description: "",
-        username: "",
-        profileImageUrl: "",
+        description: "Awesome description",
+        username: "carlos_qu24",
+        profileImageUrl: profileImage,
         imageURL:
             firstUserPostImage
     },
     {
-        id: crypto.randomUUID(),
+        id:
+            "872d7878-9e85-49a6-aba7-47e69dd7d5dd",
         totalLikes: 23,
-        description: "",
-        username: "",
-        profileImageUrl: "",
+        description: "Awesome description",
+        username: "carlos_qu24",
+        profileImageUrl: profileImage,
         imageURL:
             secondUserPostImage
     },
     {
-        id: crypto.randomUUID(),
+        id:
+            "848eb0ba-3d73-4ec6-b45c-ef43870a3197",
         totalLikes: 23,
-        description: "",
-        username: "",
-        profileImageUrl: "",
+        description: "Awesome description",
+        username: "carlos_qu24",
+        profileImageUrl: profileImage,
         imageURL:
             thirdUserPostImage
     },
     {
-        id: crypto.randomUUID(),
+        id: "292a6491-3a0f-46ef-80e5-d0633b6e22cc",
         totalLikes: 23,
-        description: "",
-        username: "",
-        profileImageUrl: "",
+        description: "Awesome description",
+        username: "carlos_qu24",
+        profileImageUrl: profileImage,
         imageURL:
             fourthUserPostImage
     },
     {
-        id: crypto.randomUUID(),
+        id:
+            "ed8aeb9d-7b51-47af-8028-6ce1e41d8bd3",
         totalLikes: 23,
-        description: "",
-        username: "",
-        profileImageUrl: "",
+        description: "Awesome description",
+        username: "carlos_qu24",
+        profileImageUrl: profileImage,
         imageURL:
             fifthUserPostImage
     },
     {
-        id: crypto.randomUUID(),
+        id:
+            "954211d9-3304-45f2-a447-b87876f7c747",
         totalLikes: 23,
-        description: "",
-        username: "",
-        profileImageUrl: "",
+        description: "Awesome description",
+        username: "carlos_qu24",
+        profileImageUrl: profileImage,
         imageURL:
             sixthUserPostImage
     }
