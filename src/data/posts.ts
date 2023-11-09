@@ -25,6 +25,7 @@ export const mockPostsList: Post[] = [
         description:
             'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto consectetur labore omnis ratione blanditiis nam quis voluptas aliquam quo eos!',
         totalLikes: 23,
+        totalComments: 2,
         username: 'programador.x',
         profileImageUrl:
             lamborghiniProfileImage
@@ -35,6 +36,7 @@ export const mockPostsList: Post[] = [
             galaxyPhoto,
         description: 'Awesome description',
         totalLikes: 424,
+        totalComments: 2,
         username: 'nasa',
         profileImageUrl:
             nasaProfileImage
@@ -45,6 +47,7 @@ export const mockPostsList: Post[] = [
             jasonStahamPhoto,
         description: 'Awesome description',
         totalLikes: 455,
+        totalComments: 2,
         username: 'jstatham',
         profileImageUrl:
             jasonStathamProfileImage
