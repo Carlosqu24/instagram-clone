@@ -1,53 +1,54 @@
 import React from 'react'
 
+import wildProjectProfileImage from '../../../../../public/storiesList/wild_project_profile_image.jpg'
+import spacexProfileImage from '../../../../../public/storiesList/spacex_profile_image.jpg'
+import blueOriginProfileImage from '../../../../../public/storiesList/blue_origin_profile_image.jpg'
+import appleProfileImage from '../../../../../public/storiesList/apple_profile_image.jpg'
+import maseratiProfileImage from '../../../../../public/storiesList/maserati_profile_image.webp'
+import githubProfileImage from '../../../../../public/storiesList/github_profile_image.png'
+import cr7ProfileImage from '../../../../../public/storiesList/cr7_profile_image.jpg'
+import messiProfileImage from '../../../../../public/storiesList/messi_profile_image.webp'
+
 const storiesList = [
   {
     id: crypto.randomUUID(),
-    profileImageUrl:
-      'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.alphacoders.com%2F294%2F294033.jpg&f=1&nofb=1&ipt=baa2ff35bffeea6fe5501d4838bb0b1efb7de1077e0d5b477a7ee7d7d65d9ee6&ipo=images',
-    title: '_gquiros'
+    profileImageUrl: wildProjectProfileImage,
+    title: 'the.wildproject'
   },
   {
     id: crypto.randomUUID(),
-    profileImageUrl:
-      'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.alphacoders.com%2F294%2F294033.jpg&f=1&nofb=1&ipt=baa2ff35bffeea6fe5501d4838bb0b1efb7de1077e0d5b477a7ee7d7d65d9ee6&ipo=images',
-    title: '_gquiros'
+    profileImageUrl: spacexProfileImage,
+    title: 'spacex'
   },
   {
     id: crypto.randomUUID(),
-    profileImageUrl:
-      'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.alphacoders.com%2F294%2F294033.jpg&f=1&nofb=1&ipt=baa2ff35bffeea6fe5501d4838bb0b1efb7de1077e0d5b477a7ee7d7d65d9ee6&ipo=images',
-    title: '_gquiros'
+    profileImageUrl: blueOriginProfileImage,
+    title: 'blueorigin'
   },
   {
     id: crypto.randomUUID(),
-    profileImageUrl:
-      'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.alphacoders.com%2F294%2F294033.jpg&f=1&nofb=1&ipt=baa2ff35bffeea6fe5501d4838bb0b1efb7de1077e0d5b477a7ee7d7d65d9ee6&ipo=images',
-    title: '_gquiros'
+    profileImageUrl: appleProfileImage,
+    title: 'apple'
   },
   {
     id: crypto.randomUUID(),
-    profileImageUrl:
-      'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.alphacoders.com%2F294%2F294033.jpg&f=1&nofb=1&ipt=baa2ff35bffeea6fe5501d4838bb0b1efb7de1077e0d5b477a7ee7d7d65d9ee6&ipo=images',
-    title: '_gquiros'
+    profileImageUrl: maseratiProfileImage,
+    title: 'maseratti'
   },
   {
     id: crypto.randomUUID(),
-    profileImageUrl:
-      'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.alphacoders.com%2F294%2F294033.jpg&f=1&nofb=1&ipt=baa2ff35bffeea6fe5501d4838bb0b1efb7de1077e0d5b477a7ee7d7d65d9ee6&ipo=images',
-    title: '_gquiros'
+    profileImageUrl: githubProfileImage,
+    title: 'github'
   },
   {
     id: crypto.randomUUID(),
-    profileImageUrl:
-      'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.alphacoders.com%2F294%2F294033.jpg&f=1&nofb=1&ipt=baa2ff35bffeea6fe5501d4838bb0b1efb7de1077e0d5b477a7ee7d7d65d9ee6&ipo=images',
-    title: '_gquiros'
+    profileImageUrl: messiProfileImage,
+    title: 'messi'
   },
   {
     id: crypto.randomUUID(),
-    profileImageUrl:
-      'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.alphacoders.com%2F294%2F294033.jpg&f=1&nofb=1&ipt=baa2ff35bffeea6fe5501d4838bb0b1efb7de1077e0d5b477a7ee7d7d65d9ee6&ipo=images',
-    title: '_gquiros'
+    profileImageUrl: cr7ProfileImage,
+    title: 'cr7cristianoronaldo'
   }
 ]
 
