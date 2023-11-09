@@ -7,8 +7,8 @@ import { useNavigate } from 'react-router-dom'
 const UserProfileContainer = () => {
   const navigate = useNavigate()
 
-  const onPostCardClick = () => {
-    navigate('/profile/posts/' + crypto.randomUUID())
+  const onPostCardClick = (postId: string) => {
+    navigate('/profile/posts/' + postId)
   }
 
   return (

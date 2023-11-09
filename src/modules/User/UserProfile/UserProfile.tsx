@@ -7,7 +7,7 @@ interface UserProfileProps {
   user: User
   userPostsList: any[]
 
-  onPostCardClick: () => void
+  onPostCardClick: (postId: string) => void
 }
 
 const UserProfile = ({

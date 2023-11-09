@@ -1,9 +1,10 @@
+import { Post } from 'models/post'
 import React, { MouseEvent } from 'react'
 
 interface UserPostsGridProps {
-  userPostsList: any[]
+  userPostsList: Post[]
 
-  onPostCardClick: () => void
+  onPostCardClick: (postId: string) => void
 }
 
 const UserPostsGrid = ({
@@ -13,7 +14,10 @@ const UserPostsGrid = ({
   return (
     <div className="grid grid-cols-3 gap-1">
       {userPostsList.map((post) => (
-        <div className="relative h-[215px] " onClick={() => onPostCardClick()}>
+        <div
+          className="relative h-[215px] "
+          onClick={() => onPostCardClick(`${post.id}`)}
+        >
           <div className="bg-[#00000] text-[transparent] absolute w-full h-full flex items-center justify-center z-20 hover:w-full hover:h-full hover:bg-[#343434ad] hover:text-[#fff]">
             <div className="flex items-center">
               <span className="material-icons text-[18px]">favorite</span>
