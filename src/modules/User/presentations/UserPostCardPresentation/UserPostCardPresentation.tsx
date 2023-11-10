@@ -48,11 +48,11 @@ const UserPostCardPresentation = ({
 
   return (
     <div
-      className="absolute bg-[#00000080] left-0 top-0 mt-[23px]  w-full h-[100%]"
+      className="fixed bg-[#00000080] left-0 top-0 sm:mt-[23px] w-full sm:h-[100vh]"
       style={{ zIndex: '123123123' }}
     >
-      <div className="flex w-full h-full mt-[10px]">
-        <div className=" h-full max-h-[611px] max-w-[488.8px] ml-auto ">
+      <div className="h-[100%] flex flex-col sm:flex-row max-w-[100%] mb-[10px] sm:mb-[0] sm:mt-[10px] sm:mx-[25px]">
+        <div className="h-[50vh] sm:h-auto w-full sm:w-auto sm:max-h-[611px] sm:max-w-[488.8px] sm:ml-auto ">
           <img
             src={post.imageURL}
             className="object-cover w-full h-full"
@@ -60,8 +60,8 @@ const UserPostCardPresentation = ({
           />
         </div>
 
-        <div className="bg-[#000] h-full max-h-[611px] w-full max-w-[500px] min-w-[405px] mr-auto">
-          <div className="w-[500px] h-[70.8px] flex justify-between py-[14px] px-[16px]">
+        <div className="h-[50vh] sm:h-auto flex flex-col justify-between sm:block bg-[#000] sm:max-h-[611px] sm:max-w-[500px] sm:min-w-[405px]  w-auto sm:mr-auto">
+          <div className=" sm:h-[70.8px] flex justify-between py-[14px] px-[16px]">
             <div className="flex justify-between">
               <img
                 src={post.profileImageUrl}
@@ -77,7 +77,7 @@ const UserPostCardPresentation = ({
 
             <span>...</span>
           </div>
-          <div className="w-[500px] h-[381px] flex flex-col items-center justify-center">
+          <div className=" sm:h-[381px] flex flex-col items-center justify-center">
             {' '}
             <h1 className="text-[24px] font-bold">
               {translator('userPost.noCommentsYet')}

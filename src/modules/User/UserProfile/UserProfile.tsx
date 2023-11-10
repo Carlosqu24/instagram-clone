@@ -81,7 +81,7 @@ const UserProfile = ({
       </div>
       <div id="default-tab-content">
         <div
-          className="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800"
+          className="p-4 rounded-lg bg-gray-50 dark:bg-gray-800"
           id="posts"
           role="tabpanel"
           aria-labelledby="posts-tab"
