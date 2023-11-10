@@ -22,19 +22,19 @@ const UserPostsGrid = ({
             <div className="flex items-center">
               <span className="material-icons text-[18px]">favorite</span>
               <span className="z-30 text-[14px] ml-2 font-bold">
-                {post.totalLikes}
+                {post.likes.count}
               </span>
             </div>
 
             <div className="ml-5 flex items-center">
               <span className="material-icons text-[18px]">chat_bubble</span>
               <span className="z-30 text-[14px] ml-2 font-bold">
-                {post.totalComments}
+                {post.comments.count}
               </span>
             </div>
           </div>
           <img
-            src={post.imageURL}
+            src={post.thumbnailUrl}
             className="absolute bg-blue-400 w-full h-full object-cover z-10"
           />
         </div>

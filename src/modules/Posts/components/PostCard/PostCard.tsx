@@ -43,13 +43,13 @@ const PostCard = ({ post }: PostCardProps) => {
         <div className={postCardClassNames.cardHeaderUserInformation}>
           <img
             className={postCardClassNames.cardHeaderUserInformationProfileImage}
-            src={post.profileImageUrl}
+            src={post.user.profileImageUrl}
             alt=""
           />
           <span
             className={postCardClassNames.cardHeaderUserInformationUsername}
           >
-            {post.username}
+            {post.user.username}
           </span>
           <span className={postCardClassNames.cardHeaderUserInformationTimeAgo}>
             5h
@@ -58,7 +58,7 @@ const PostCard = ({ post }: PostCardProps) => {
         <div>...</div>
       </div>
       <img
-        src={post.imageURL}
+        src={post.thumbnailUrl}
         className={postCardClassNames.cardPosterImage}
         alt="..."
       />
@@ -82,10 +82,10 @@ const PostCard = ({ post }: PostCardProps) => {
         </div>
         <div>
           <p className={postCardClassNames.cardBodyTotalLikes}>
-            {post.totalLikes} likes
+            {post.likes.count} likes
           </p>
           <span className={postCardClassNames.cardBodyUsername}>
-            {post.username}
+            {post.user.username}
           </span>
           <span className={postCardClassNames.cardBodyDescription}>
             {post.description.length > 75

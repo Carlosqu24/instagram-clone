@@ -19,104 +19,203 @@ import sixthUserPostImage from "../../public/userPostsList/6.png"
 
 export const mockPostsList: Post[] = [
     {
-        id: 1,
-        imageURL:
+        id: "1",
+        thumbnailUrl:
             lamborghiniPhoto,
-        description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto consectetur labore omnis ratione blanditiis nam quis voluptas aliquam quo eos!',
-        totalLikes: 23,
-        totalComments: 2,
-        username: 'lamborghini',
-        profileImageUrl:
-            lamborghiniProfileImage
+        comments: {
+            dataList: [],
+            count: 0
+        },
+        likes: {
+            dataList: [],
+            count: 0
+        },
+        user: {
+            username: "lamborghini",
+            biography: "Awesome biography",
+            displayName: "Lamborghini",
+            profileImageUrl: lamborghiniProfileImage
+        },
+        createdAt: "",
+        description: "Awesome description"
     },
     {
-        id: 2,
-        imageURL:
+        id: "2",
+        thumbnailUrl:
             galaxyPhoto,
-        description: 'Awesome description',
-        totalLikes: 424,
-        totalComments: 2,
-        username: 'nasa',
-        profileImageUrl:
-            nasaProfileImage
+        comments: {
+            dataList: [],
+            count: 0
+        },
+        likes: {
+            dataList: [],
+            count: 0
+        },
+        user: {
+            username: "nasa",
+            biography: "Awesome biography",
+            displayName: "Nasa",
+            profileImageUrl: nasaProfileImage
+        },
+        createdAt: "",
+        description: "Awesome description"
     },
     {
-        id: 3,
-        imageURL:
+        id: "3",
+        thumbnailUrl:
             jasonStahamPhoto,
-        description: 'Awesome description',
-        totalLikes: 455,
-        totalComments: 2,
-        username: 'jstatham',
-        profileImageUrl:
-            jasonStathamProfileImage
+        comments: {
+            dataList: [],
+            count: 0
+        },
+        likes: {
+            dataList: [],
+            count: 0
+        },
+        user: {
+            username: "jstatham",
+            biography: "Awesome biography",
+            displayName: "Jason Statham",
+            profileImageUrl: jasonStathamProfileImage
+        },
+        createdAt: "",
+        description: "Awesome description"
     }
 ]
 
 export const mockUserPostsList: Post[] = [
     {
         id: "056b6a14-9d14-4590-88e7-29fec5e20faf",
-        totalLikes: 23,
-        totalComments: 12,
-        description: "Awesome description",
-        username: "carlos_qu24",
-        profileImageUrl: profileImage,
-        imageURL:
-            firstUserPostImage
+        thumbnailUrl:
+            firstUserPostImage,
+        comments: {
+            dataList: [],
+            count: 0
+        },
+        likes: {
+            dataList: [],
+            count: 0
+        },
+        user: {
+            username: "carlos_qu24",
+            biography: "Awesome biography",
+            displayName: "Carlos Quesada Umaña",
+            profileImageUrl: profileImage
+        },
+        createdAt: "",
+        description: "Awesome description"
     },
     {
         id:
             "872d7878-9e85-49a6-aba7-47e69dd7d5dd",
-        totalLikes: 23,
-        totalComments: 12,
-        description: "Awesome description",
-        username: "carlos_qu24",
-        profileImageUrl: profileImage,
-        imageURL:
-            secondUserPostImage
+        thumbnailUrl:
+            secondUserPostImage,
+        comments: {
+            dataList: [],
+            count: 0
+        },
+        likes: {
+            dataList: [],
+            count: 0
+        },
+        user: {
+            username: "carlos_qu24",
+            biography: "Awesome biography",
+            displayName: "Carlos Quesada Umaña",
+            profileImageUrl: profileImage
+        },
+        createdAt: "",
+        description: "Awesome description"
+
+
+
+
     },
     {
         id:
             "848eb0ba-3d73-4ec6-b45c-ef43870a3197",
-        totalLikes: 23,
-        totalComments: 12,
-        description: "Awesome description",
-        username: "carlos_qu24",
-        profileImageUrl: profileImage,
-        imageURL:
-            thirdUserPostImage
+        thumbnailUrl:
+            thirdUserPostImage,
+        comments: {
+            dataList: [],
+            count: 0
+        },
+        likes: {
+            dataList: [],
+            count: 0
+        },
+        user: {
+            username: "carlos_qu24",
+            biography: "Awesome biography",
+            displayName: "Carlos Quesada Umaña",
+            profileImageUrl: profileImage
+        },
+        createdAt: "",
+        description: "Awesome description"
     },
     {
         id: "292a6491-3a0f-46ef-80e5-d0633b6e22cc",
-        totalLikes: 23,
-        totalComments: 12,
-        description: "Awesome description",
-        username: "carlos_qu24",
-        profileImageUrl: profileImage,
-        imageURL:
-            fourthUserPostImage
+        thumbnailUrl:
+            fourthUserPostImage,
+        comments: {
+            dataList: [],
+            count: 0
+        },
+        likes: {
+            dataList: [],
+            count: 0
+        },
+        user: {
+            username: "carlos_qu24",
+            biography: "Awesome biography",
+            displayName: "Carlos Quesada Umaña",
+            profileImageUrl: profileImage
+        },
+        createdAt: "",
+        description: "Awesome description"
     },
     {
         id:
             "ed8aeb9d-7b51-47af-8028-6ce1e41d8bd3",
-        totalLikes: 23,
-        totalComments: 12,
-        description: "Awesome description",
-        username: "carlos_qu24",
-        profileImageUrl: profileImage,
-        imageURL:
-            fifthUserPostImage
+        thumbnailUrl:
+            fifthUserPostImage,
+        comments: {
+            dataList: [],
+            count: 0
+        },
+        likes: {
+            dataList: [],
+            count: 0
+        },
+        user: {
+            username: "carlos_qu24",
+            biography: "Awesome biography",
+            displayName: "Carlos Quesada Umaña",
+            profileImageUrl: profileImage
+        },
+        createdAt: "",
+        description: "Awesome description"
     },
     {
         id:
             "954211d9-3304-45f2-a447-b87876f7c747",
-        totalLikes: 23,
-        totalComments: 12,
-        description: "Awesome description",
-        username: "carlos_qu24",
-        profileImageUrl: profileImage,
-        imageURL:
-            sixthUserPostImage
+        thumbnailUrl:
+            sixthUserPostImage,
+        comments: {
+            dataList: [],
+            count: 0
+        },
+        likes: {
+            dataList: [],
+            count: 0
+        },
+        user: {
+            username: "carlos_qu24",
+            biography: "Awesome biography",
+            displayName: "Carlos Quesada Umaña",
+            profileImageUrl: profileImage
+        },
+        createdAt: "",
+        description: "Awesome description"
     }
 ]

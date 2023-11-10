@@ -54,7 +54,7 @@ const UserPostCardPresentation = ({
       <div className="h-[100%] flex flex-col sm:flex-row max-w-[100%] mb-[10px] sm:mb-[0] sm:mt-[10px] sm:mx-[25px]">
         <div className="h-[50vh] sm:h-auto w-full sm:w-auto sm:max-h-[611px] sm:max-w-[488.8px] sm:ml-auto ">
           <img
-            src={post.imageURL}
+            src={post.thumbnailUrl}
             className="object-cover w-full h-full"
             alt=""
           />
@@ -64,13 +64,13 @@ const UserPostCardPresentation = ({
           <div className=" sm:h-[70.8px] flex justify-between py-[14px] px-[16px]">
             <div className="flex justify-between">
               <img
-                src={post.profileImageUrl}
+                src={post.user.profileImageUrl}
                 className="h-full rounded-full h-[32px] w-[32px]"
                 alt=""
               />
 
               <div className="ml-[20px] flex items-start flex-col justify-items-start">
-                <h3 className="text-[13px] font-bold">{post.username}</h3>
+                <h3 className="text-[13px] font-bold">{post.user.username}</h3>
                 <span className="text-[11px]">Playa Bejuco, Puntarenas</span>
               </div>
             </div>
@@ -107,10 +107,10 @@ const UserPostCardPresentation = ({
             </div>
             <div>
               <p className={postCardClassNames.cardBodyTotalLikes}>
-                {post.totalLikes} likes
+                {post.likes.count} likes
               </p>
               <span className={postCardClassNames.cardBodyUsername}>
-                {post.username}
+                {post.user.username}
               </span>
               <span className={postCardClassNames.cardBodyDescription}>
                 {post.description.length > 75
