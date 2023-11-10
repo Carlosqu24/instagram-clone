@@ -26,7 +26,7 @@ export const mockPostsList: Post[] = [
             'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto consectetur labore omnis ratione blanditiis nam quis voluptas aliquam quo eos!',
         totalLikes: 23,
         totalComments: 2,
-        username: 'programador.x',
+        username: 'lamborghini',
         profileImageUrl:
             lamborghiniProfileImage
     },
