@@ -24,7 +24,7 @@ export const mockPostsList: Post[] = [
             lamborghiniPhoto,
         comments: {
             dataList: [],
-            count: 0
+            count: 23
         },
         likes: {
             dataList: [],
@@ -45,7 +45,7 @@ export const mockPostsList: Post[] = [
             galaxyPhoto,
         comments: {
             dataList: [],
-            count: 0
+            count: 42
         },
         likes: {
             dataList: [],
@@ -94,7 +94,7 @@ export const mockUserPostsList: Post[] = [
         },
         likes: {
             dataList: [],
-            count: 0
+            count: 23
         },
         user: {
             username: "carlos_qu24",
@@ -116,7 +116,7 @@ export const mockUserPostsList: Post[] = [
         },
         likes: {
             dataList: [],
-            count: 0
+            count: 4
         },
         user: {
             username: "carlos_qu24",
@@ -126,10 +126,6 @@ export const mockUserPostsList: Post[] = [
         },
         createdAt: "",
         description: "Awesome description"
-
-
-
-
     },
     {
         id:
@@ -142,7 +138,7 @@ export const mockUserPostsList: Post[] = [
         },
         likes: {
             dataList: [],
-            count: 0
+            count: 664
         },
         user: {
             username: "carlos_qu24",
@@ -163,7 +159,7 @@ export const mockUserPostsList: Post[] = [
         },
         likes: {
             dataList: [],
-            count: 0
+            count: 9
         },
         user: {
             username: "carlos_qu24",
@@ -185,7 +181,7 @@ export const mockUserPostsList: Post[] = [
         },
         likes: {
             dataList: [],
-            count: 0
+            count: 742
         },
         user: {
             username: "carlos_qu24",
@@ -207,7 +203,7 @@ export const mockUserPostsList: Post[] = [
         },
         likes: {
             dataList: [],
-            count: 0
+            count: 56
         },
         user: {
             username: "carlos_qu24",
