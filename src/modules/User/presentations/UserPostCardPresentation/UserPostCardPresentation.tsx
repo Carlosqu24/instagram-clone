@@ -28,7 +28,7 @@ const postCardClassNames = {
   cardBody: `card-body pl-[16px] pr-[16px] `,
   cardBodyActions: `flex justify-between items-center pt-3 pb-2`,
   cardBodyActionsLeft: `flex justify-between items-center`,
-  cardBodyActionsRight: `material-symbols-outlined ml-1 text-[26px]`,
+  cardBodyActionsRight: `material-symbols-outlined ml-1 text-[26px] cursor-pointer`,
 
   cardBodyTotalLikes: `font-bold`,
   cardBodyUsername: `font-bold`,
@@ -75,7 +75,7 @@ const UserPostCardPresentation = ({
               </div>
             </div>
 
-            <span>...</span>
+            <span className="cursor-pointer">...</span>
           </div>
           <div className=" sm:h-[381px] flex flex-col items-center justify-center">
             {' '}
@@ -90,13 +90,13 @@ const UserPostCardPresentation = ({
           <div className={postCardClassNames.cardBody}>
             <div className={postCardClassNames.cardBodyActions}>
               <div className={postCardClassNames.cardBodyActionsLeft}>
-                <span className="material-symbols-outlined text-[26px]">
+                <span className="material-symbols-outlined text-[26px] cursor-pointer">
                   favorite
                 </span>
-                <span className="material-symbols-outlined ml-1 text-[26px]">
+                <span className="material-symbols-outlined ml-1 text-[26px] cursor-pointer">
                   chat_bubble
                 </span>
-                <span className="material-symbols-outlined ml-1 text-[26px]">
+                <span className="material-symbols-outlined ml-1 text-[26px] cursor-pointer">
                   send
                 </span>
               </div>
@@ -135,7 +135,7 @@ const UserPostCardPresentation = ({
       </div>
 
       <span
-        className="fixed top-0 right-0 mr-[20px] mt-[20px]"
+        className="fixed top-0 right-0 mr-[20px] mt-[20px] cursor-pointer"
         onClick={() => handleCloseModal()}
       >
         X
