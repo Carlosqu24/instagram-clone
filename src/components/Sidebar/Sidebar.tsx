@@ -24,7 +24,7 @@ const sidebarClassNames = {
   navbarList: `space-y-2 font-medium`,
   navbarItem: ``,
   navbarItemTextSpan: `flex-1 ml-3 whitespace-nowrap hidden xl:flex 2xl:flex`,
-  navbarLink: `flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group`,
+  navbarLink: `flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group cursor-pointer`,
   navbarLinkLogo: `flex items-center p-2 py-6 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group`,
   navbarLogo: ``,
   navbarProfileImage: 'w-[24px] rounded-full'
@@ -61,6 +61,18 @@ const Sidebar = () => {
                 {translator('navbar.home')}
               </span>
             </a>
+          </li>
+          <li>
+            <div
+              onClick={() => alert('Opening create form post...')}
+              className={sidebarClassNames.navbarLink}
+            >
+              <span className="material-icons w-[24px] h-[24px]">add_box</span>
+
+              <span className={sidebarClassNames.navbarItemTextSpan}>
+                {translator('navbar.create')}
+              </span>
+            </div>
           </li>
           <li>
             <a href="/profile" className={sidebarClassNames.navbarLink}>

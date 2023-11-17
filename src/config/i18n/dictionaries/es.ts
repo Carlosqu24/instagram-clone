@@ -4,6 +4,7 @@ export default {
 
         navbar: {
             home: "Inicio",
+            create: "Crear",
             profile: "Perfil"
         },
 
