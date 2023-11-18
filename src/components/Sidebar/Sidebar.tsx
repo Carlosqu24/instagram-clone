@@ -1,3 +1,4 @@
+import { useModal } from 'context/Modal/ModalContext'
 import React from 'react'
 
 import { useTranslation } from 'react-i18next'
@@ -32,6 +33,7 @@ const sidebarClassNames = {
 
 const Sidebar = () => {
   const { t: translator } = useTranslation()
+  const { openModal } = useModal()
 
   return (
     <aside
@@ -64,7 +66,27 @@ const Sidebar = () => {
           </li>
           <li>
             <div
-              onClick={() => alert('Opening create form post...')}
+              onClick={() =>
+                openModal(
+                  <>
+                    <h1>xssss</h1>
+
+                    <button
+                      onClick={() =>
+                        openModal(
+                          <>
+                            <h1>xssss</h1>
+                          </>,
+                          'Second'
+                        )
+                      }
+                    >
+                      Siguiente
+                    </button>
+                  </>,
+                  'Create New Post'
+                )
+              }
               className={sidebarClassNames.navbarLink}
             >
               <span className="material-icons w-[24px] h-[24px]">add_box</span>
