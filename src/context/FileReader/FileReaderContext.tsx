@@ -33,7 +33,7 @@ interface IMAGE_UPLOAD_STATUS {
   ERROR: 'ERROR'
 }
 
-export const FileProvider: React.FC = ({ children }) => {
+export const FileProvider = ({ children }: { children: JSX.Element }) => {
   const [selectedFile, setSelectedFile] = useState<File | null>(null)
   const [imageUrl, setImageUrl] = useState<string | null | ArrayBuffer>(null)
   const [wasImageUploaded, setWasImageUploaded] = useState<boolean>(false)
