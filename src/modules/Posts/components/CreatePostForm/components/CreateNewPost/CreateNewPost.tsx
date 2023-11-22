@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 
 import ProfileImage from '../../../../../../../public/profile-image.jpg'
 import { useForm } from 'hooks/useForm'
 import { useModal } from 'context/Modal/ModalContext'
 import SelectMedia, { SelectMediaHeader } from '../SelectMedia/SelectMedia'
 import { ModalStyles } from 'components/Modal/Modal'
+import { FileContext } from 'context/FileReader/FileReaderContext'
 
 const modalStyles: ModalStyles = {
   modalContainer:
@@ -38,18 +39,17 @@ interface CreateNewPostForm {
   caption: string
 }
 
-//find create useForm with typescript generic.js
-
 const CreateNewPost = () => {
   const [formValues, handleInputChange] = useForm<CreateNewPostForm>({
     caption: ''
   })
+  const { imageUrl, handleFileChange } = useContext(FileContext)
 
   const captionLength = formValues.caption.length
 
   return (
     <div className="w-[100%] flex">
-      <img src={TEST_URL} alt="" className="w-[50%]" />
+      <img src={imageUrl} alt="" className="w-[50%]" />
 
       <div className="w-[50%] px-[16px]">
         <div className={postCardClassNames.cardHeader}>
@@ -89,14 +89,18 @@ const CreateNewPost = () => {
 
 export const CreateNewPostHeader = () => {
   const { openModal } = useModal()
+  const { setWasImageUploaded } = useContext(FileContext)
+
+  const handleBackArrowClick = () => {
+    setWasImageUploaded(false)
+    openModal(<SelectMedia />, <SelectMediaHeader />, modalStyles)
+  }
 
   return (
     <div className="w-full flex items-center justify-content-between">
       <span
         className="mr-auto material-symbols-outlined text-[26px] cursor-pointer"
-        onClick={() =>
-          openModal(<SelectMedia />, <SelectMediaHeader />, modalStyles)
-        }
+        onClick={handleBackArrowClick}
       >
         arrow_back
       </span>
