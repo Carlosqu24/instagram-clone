@@ -3,6 +3,11 @@ import React from 'react'
 
 import { useTranslation } from 'react-i18next'
 
+import SelectMedia, {
+  SelectMediaHeader
+} from '../../modules/Posts/components/CreatePostForm/components/SelectMedia/SelectMedia'
+import { ModalStyles } from 'components/Modal/Modal'
+
 const sidebarClassNames = {
   aside: `fixed 
   top-0 
@@ -29,6 +34,13 @@ const sidebarClassNames = {
   navbarLinkLogo: `flex items-center p-2 py-6 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group`,
   navbarLogo: ``,
   navbarProfileImage: 'w-[24px] rounded-full'
+}
+
+const modalStyles: ModalStyles = {
+  modalContainer:
+    'z-50 bg-white mx-auto rounded-md shadow-lg w-[440px] h-[440px] z-10000000',
+  modalHeader: 'p-2 w-full text-center flex justify-content-between',
+  modalContent: 'modal-content flex justify-content-between'
 }
 
 const Sidebar = () => {
@@ -67,25 +79,7 @@ const Sidebar = () => {
           <li>
             <div
               onClick={() =>
-                openModal(
-                  <>
-                    <h1>xssss</h1>
-
-                    <button
-                      onClick={() =>
-                        openModal(
-                          <>
-                            <h1>xssss</h1>
-                          </>,
-                          'Second'
-                        )
-                      }
-                    >
-                      Siguiente
-                    </button>
-                  </>,
-                  'Create New Post'
-                )
+                openModal(<SelectMedia />, <SelectMediaHeader />, modalStyles)
               }
               className={sidebarClassNames.navbarLink}
             >
