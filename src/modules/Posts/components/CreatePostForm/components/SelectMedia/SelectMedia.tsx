@@ -25,15 +25,21 @@ const SelectMedia = () => {
   }, [wasImageUploaded])
 
   return (
-    <div className="flex flex-col h-full items-center justify-content-center">
+    <div className="flex flex-col w-full m-auto items-center justify-content-center">
       <h1 className="text-[20px]">Drag photos and videos here</h1>
+
+      <label
+        htmlFor="fileUpload"
+        className="cursor-pointer bg-blue-500 text-white py-2 px-4 rounded bg-[#0095F6] text-[#fff] py-[7px] px-[16px] mt-[24px]"
+      >
+        Select From Computer
+      </label>
 
       <input
         type="file"
-        placeholder="Select From Computer"
         onChange={handleFileChange}
-        id="fileInput"
-        className="bg-[#0095F6] text-[#fff] py-[7px] px-[16px] mt-[24px]"
+        id="fileUpload"
+        style={{ display: 'none' }}
       />
     </div>
   )
@@ -41,8 +47,8 @@ const SelectMedia = () => {
 
 export const SelectMediaHeader = () => {
   return (
-    <div className="w-full flex items-center justify-content-between">
-      <h1 className="text-center">Create new post</h1>
+    <div className="w-full flex items-center justify-content-between ">
+      <h1 className="text-center m-auto">Create new post</h1>
     </div>
   )
 }

@@ -11,7 +11,7 @@ const modalStyles: ModalStyles = {
   modalContainer:
     'z-50 bg-white mx-auto rounded-md shadow-lg w-[440px] h-[440px] z-10000000',
   modalHeader: 'p-2 w-full text-center flex justify-content-between',
-  modalContent: 'modal-content flex justify-content-between'
+  modalContent: 'modal-content flex justify-content-between h-full'
 }
 
 const TEST_URL =
@@ -49,7 +49,7 @@ const CreateNewPost = () => {
 
   return (
     <div className="w-[100%] flex">
-      <img src={imageUrl} alt="" className="w-[50%]" />
+      <img src={imageUrl} alt="" className="w-[390px] h-[390px]" />
 
       <div className="w-[50%] px-[16px]">
         <div className={postCardClassNames.cardHeader}>
