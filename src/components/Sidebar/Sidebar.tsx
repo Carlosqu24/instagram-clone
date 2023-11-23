@@ -1,5 +1,5 @@
 import { useModal } from 'context/Modal/ModalContext'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 import { useTranslation } from 'react-i18next'
 
@@ -7,6 +7,9 @@ import SelectMedia, {
   SelectMediaHeader
 } from '../../modules/Posts/components/CreatePostForm/components/SelectMedia/SelectMedia'
 import { ModalStyles } from 'components/Modal/Modal'
+
+import instagramLogo from '../../../public/instagram-logo-white.png'
+import instagramLogoSmallSize from '../../../public/instagram-logo-small-screen-white.png'
 
 const sidebarClassNames = {
   aside: `fixed 
@@ -44,6 +47,20 @@ const modalStyles: ModalStyles = {
 }
 
 const Sidebar = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+
+  const handleResize = () => {
+    setWindowWidth(window.innerWidth)
+  }
+
+  useEffect(() => {
+    window.addEventListener('resize', handleResize)
+
+    return () => {
+      window.removeEventListener('resize', handleResize)
+    }
+  }, [])
+
   const { t: translator } = useTranslation()
   const { openModal } = useModal()
 
@@ -61,8 +78,8 @@ const Sidebar = () => {
                 className={window.innerWidth >= 1280 ? 'w-28' : 'w-6'}
                 src={
                   window.innerWidth >= 1280
-                    ? '../../../public/instagram-logo-white.png'
-                    : '../../../public/instagram-logo-small-screen-white.png'
+                    ? instagramLogo
+                    : instagramLogoSmallSize
                 }
                 alt=""
               />

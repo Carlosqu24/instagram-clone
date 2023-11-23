@@ -8,7 +8,7 @@ import jasonStahamPhoto from "../../public/postsList/jason-statham-mens-health-1
 
 import lamborghiniProfileImage from "../../public/postsList/lamborghini_profile_image.png"
 import nasaProfileImage from "../../public/postsList/NASA_profile_image.png"
-import jasonStathamProfileImage from "../../public/postsList/js.jpg"
+import jasonStathamProfileImage from "../../public/postsList/js.jpeg"
 
 import firstUserPostImage from "../../public/userPostsList/plage.jpg"
 import secondUserPostImage from "../../public/userPostsList/2.webp"
@@ -28,7 +28,7 @@ export const mockPostsList: Post[] = [
         },
         likes: {
             dataList: [],
-            count: 0
+            count: 231
         },
         user: {
             username: "lamborghini",
@@ -49,7 +49,7 @@ export const mockPostsList: Post[] = [
         },
         likes: {
             dataList: [],
-            count: 0
+            count: 489
         },
         user: {
             username: "nasa",
@@ -70,7 +70,7 @@ export const mockPostsList: Post[] = [
         },
         likes: {
             dataList: [],
-            count: 0
+            count: 738
         },
         user: {
             username: "jstatham",
